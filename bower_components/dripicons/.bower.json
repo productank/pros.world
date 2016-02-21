@@ -1,0 +1,37 @@
+{
+  "name": "Dripicons",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mariuzzo/dripicons",
+  "authors": [
+    "Rubens Mariuzzo <rubens@mariuzzo.com>"
+  ],
+  "description": "Free set of line icons for the web based on Dripicons",
+  "keywords": [
+    "dripicons",
+    "icon",
+    "iconset",
+    "icons",
+    "free",
+    "webfont",
+    "sass",
+    "scss",
+    "font"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "8f5ddc818e3a0783fe1f86c5be5b13d6c2e551ae"
+  },
+  "_source": "git://github.com/mariuzzo/Dripicons.git",
+  "_target": "~1.0.0",
+  "_originalSource": "dripicons"
+}

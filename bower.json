@@ -44,5 +44,8 @@
     "matchMedia": "~0.2.0",
     "angular-socialshare": "~1.4.4",
     "satellizer": "~0.13.3"
+  },
+  "resolutions": {
+    "angular": "1.5.0"
   }
 }

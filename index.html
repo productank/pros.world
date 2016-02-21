@@ -38,18 +38,6 @@
 </head>
 <body data-ng-app="app" id="app" ng-controller="NavCtrl as navigationController" class="navigation--small">
 
-<div id="stadium">
-
-<div id="seats">
-
-<div id="feild">
-
-<div id="end-zone-home">
-<h1>HOME TEAM</h1>
-<div id="proActive-logo">
-</div><!-- end proActive-logo -->
-</div><!-- end end-zone-home -->
-
   <div data-ng-controller="ColorSwitchLayoutCtrl"></div>
 
   <aside data-ng-hide="navigationController.checkIfOwnPage()" data-ng-include=" 'app/common/navigation/navigation.html' "
@@ -62,7 +50,7 @@
              id="header" class="top-header"></section>
 
     <section data-ng-view="" id="content" class="main-content" md-scroll-y>
-      
+
     </section>
     <section class="footer">
 
@@ -84,19 +72,7 @@
   <script type="text/javascript" src="./app/views/home/controller/home.js"></script>
   <script type="text/javascript" src="./app/views/home/controller/mainFactory.js"></script>
 
-<div id="end-zone-visitors">
-<h1>AWAY TEAM</h1>
-</div><!-- end end end-zone-vistors-->
 
-
-</div><!-- end feild -->
-
-</div><!-- end seats -->
-
-
-
-
-</div><!-- end of stadium -->
 
 </body>
 </html>
