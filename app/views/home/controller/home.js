@@ -24,6 +24,44 @@ $scope.start = function(){
 
 }
 
+$scope.apStat = function(playerid,playerName){
+
+	$scope.routePlayer = playerName
+	$scope.amsterdamPlayers.forEach(function(p){
+		if(p.nflId === playerid){
+
+			$scope.showStats = 1
+			$scope.showTeam1 = 0
+			$scope.showTeam2 = 0
+			$scope.plays = p.plays
+			console.log($scope.plays)
+		}
+	});	
+
+}
+
+$scope.dpStat = function(playerid,playerName){
+
+	$scope.routePlayer = playerName
+	$scope.dragonsPlayers.forEach(function(p){
+		if(p.nflId === playerid){
+
+			$scope.showStats = 1
+			$scope.showTeam1 = 0
+			$scope.showTeam2 = 0
+
+			$scope.plays = p.plays
+			console.log($scope.plays)
+		}
+	});
+	console.log(playerid)
+
+}
+
+$scope.back = function(){
+
+	$scope.showStats=0
+}
 
 $scope.init();
 

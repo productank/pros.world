@@ -1,5 +1,5 @@
-<section class="row" ng-controller="Home">
-  <div class="md-whiteframe-z1 text-center" style="padding:33px" ng-hide="showTeam1==1 || showTeam2==1">
+<section class="row md-whiteframe-z1 " ng-controller="Home">
+  <div class="text-center" style="padding:33px" ng-hide="showTeam1==1 || showTeam2==1 || showStats==1">
   	
   	<p class="text-center">
   		<img src="" class="img-responsive, center-block">
@@ -20,7 +20,7 @@
   	</p>
   </div>
 
-  <div class="md-whiteframe-z1 text-center" style="padding:33px" ng-show="showTeam1==1">
+  <div class="text-center" style="padding:33px" ng-show="showTeam1==1">
   	<h2 class="text-center" style="color:#000">Amsterdam Admirals</h2>
 
         <div class="col-md-6 col-md-offset-3">
@@ -42,12 +42,15 @@
                         <tr>
                           <th>Name</th>
                           <th>Position</th>
+                          <th>Plays</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr ng-repeat="data in amsterdamPlayers">
-                        <td class="text-center"><a href ng-click="showStats(data.nflId)">{{data.jerseyNumber}} {{data.displayName}}</a></td>
-                          <td class="text-center"><a href ng-click="showStats(data.nflId)">{{data.position}}</a></td>
+                        <td class="text-center"><a href ng-click="apStat(data.nflId,data.displayName)">{{data.jerseyNumber}} {{data.displayName}}</a></td>
+                          <td class="text-center"><a href ng-click="apStat(data.nflId,data.displayName)">{{data.position}}</a></td>
+                          <td ng-show="data.plays.length>0">{{data.plays.length}}</td>
+                          <td ng-show="data.plays.length<1">0</td>
                         </tr>
                         </tbody>
                       </table>
@@ -69,7 +72,7 @@
 
   </div>
 
-  <div class="md-whiteframe-z1 text-center" style="padding:33px" ng-show="showTeam2==1">
+  <div class="text-center" style="padding:33px" ng-show="showTeam2==1">
   	<h2 class="text-center" style="color:#000">Barcelona Dragons</h2>
 
         <div class="col-md-6 col-md-offset-3">
@@ -91,12 +94,16 @@
                         <tr>
                           <th>Name</th>
                           <th>Position</th>
+                          <th>Plays</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr ng-repeat="data in dragonsPlayers">
-                        <td class="text-center"><a href ng-click="showStats(data.nflId)">{{data.jerseyNumber}} {{data.displayName}}</a></td>
-                          <td class="text-center"><a href ng-click="showStats(data.nflId)">{{data.position}}</a></td>
+                        <td class="text-center"><a href ng-click="dpStat(data.nflId,data.displayName)">{{data.jerseyNumber}} {{data.displayName}}</a></td>
+                          <td class="text-center"><a href ng-click="dpStat(data.nflId,data.displayName)">{{data.position}}</a></td>
+                          <td ng-show="data.plays.length>0">{{data.plays.length}}</td>
+                          <td ng-show="data.plays.length<1">0</td>
+
                         </tr>
                         </tbody>
                       </table>
@@ -117,5 +124,47 @@
         </div>
   </div>
 
+  <div class="text-center" style="padding:33px" ng-show="showStats==1">
+
+        <div class="col-md-6 col-md-offset-3">
+            <div class="md-whiteframe-z1">
+              <md-toolbar class="md-primary md-theme-default md-whiteframe-z1">
+                <div class="md-toolbar-tools">
+                  <h3>{{routePlayer}} Routes</h3>
+                  <span class="flex"></span>
+
+                </div>
+              </md-toolbar>
+              <md-content>
+                <div class="md-content__body">
+                  <div class="row text-center">
+                      canvas goes here
+                  </div>
+
+               <p>
+                  <md-button aria-label="select team" class="btn-width-medium md-raised md-accent" ng-click="nextRoute()">
+                    <md-icon md-svg-src="dist/img/icons/ic_keyboard_arrow_right_24px.svg">
+                    </md-icon> Next Route
+                  </md-button>
+
+              </p>
+           
+                </div>
+              </md-content>
+            </div>
+        <p>
+            <md-button aria-label="select team" class="btn-width-medium md-raised md-default" ng-click="back()">
+              <md-icon md-svg-src="dist/img/icons/ic_keyboard_backspace_24px.svg">
+              </md-icon> Back
+            </md-button>
+
+        </p>
+
+
+        </div>
+
+
+
+  </div>
 
 </section>
