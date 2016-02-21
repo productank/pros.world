@@ -1,10 +1,70 @@
 <section class="row" ng-controller="Home">
   <div class="md-whiteframe-z1 text-center" style="padding:33px" ng-hide="showTeam1==1 || showTeam2==1">
-  	
+
   	<p class="text-center">
   		<img src="" class="img-responsive, center-block">
   	</p>
+
   	<p class="text-center">
+
+      <div id="yards">
+  <ul>
+
+  <li>
+  <div id="yard-line-number">
+  <h2>10</h2>
+  </div>
+  </li>
+
+
+
+  <li>
+  <div id="clash">
+
+    <div id="homeTeam">
+      <div id="featuredImage">
+      </div><!-- end of featuredImage -->
+      <div id="featuredTeamStats">
+      <ul>
+      <li>Home Team</li>
+      <li>Team Stats</li>
+      <li>Player Stats</li>
+      </ul>
+      </div><!-- end of featuredTeamStats -->
+
+    </div><!-- end of homeTeam -->
+
+    <div id="awayTeam">
+    <div id="featuredImage">
+    </div><!-- end of featuredImage -->
+    <div id="featuredTeamStats">
+    <ul>
+    <li>Away Team</li>
+    <li>Team Stats</li>
+    <li>Player Stats</li>
+    </ul>
+    </div><!-- end of featuredTeamStats -->
+    </div><!-- end of homeTeam -->
+
+  </div><!-- end of clash -->
+  </li>
+
+
+  <li>
+  <div id="yard-line-number">
+  <h2>90</h2>
+  </div>
+  </li>
+
+  <li>
+  <div id="yard-line-number">
+  <h2>100</h2>
+  </div>
+  </li>
+
+
+  </ul>
+  </div><!-- end yards -->
       <md-button aria-label="select team" class="btn-width-medium md-raised md-primary" ng-click="showTeam1=1">
         <md-icon md-svg-src="dist/img/icons/ic_grade_24px.svg">
         </md-icon> Amsterdam Admirals
@@ -36,7 +96,7 @@
                 <div class="md-content__body">
                   <div class="row">
                     <div class="table-responsive">
-                      
+
                       <table class="table table-striped table-bordered">
                         <thead>
                         <tr>
@@ -85,7 +145,7 @@
                 <div class="md-content__body">
                   <div class="row">
                     <div class="table-responsive">
-                      
+
                       <table class="table table-striped table-bordered">
                         <thead>
                         <tr>

@@ -3,14 +3,14 @@
 
 html{
 width:100%;
-height:100%;	
+height:100%;
 margin:0;
 padding:0;
 }
 
 body{
 width:100%;
-height:100%;	
+height:100%;
 margin:0;
 padding:0;
 overflow:hidden;
@@ -31,13 +31,13 @@ src:url(font/dock_51.ttf)
 h1{
 font-family:"CYBERTOOTH" "Times New Roman", Times, serif;
 color:#FFF;
-font-size:24px;	
+font-size:24px;
 }
 
 h2{
 font-family:"Dock 51";
 color:#FFF;
-font-size:24px;		
+font-size:24px;
 }
 
 @font-face
@@ -59,7 +59,7 @@ float:left;
 width:100%;
 height:100%;
 margin:0 0 0 0;
-background-color:#000;	
+background-color:#000;
 float:left;
 }
 
@@ -68,7 +68,7 @@ width:95%;
 height:100%;
 float:left;
 overflow-y:scroll;
-margin:0 0 0 2.5%;	
+margin:0 0 0 2.5%;
 }
 
 
@@ -78,16 +78,16 @@ height:75px;
 float:left;
 margin:0;
 border-radius:10px;
-background:url("../image/sf-49ers-banner.png") no-repeat;
+background:url("../images/sf-49ers-banner.png") no-repeat;
 background-size:100% 100%;
 }
 
 #end-zone-home:hover{
-background-color:rgba(0,102,0,1);	
+background-color:rgba(0,102,0,1);
 }
 
 #end-zone-home h1{
-text-align:center;	
+text-align:center;
 }
 
 #end-zone-visitors{
@@ -95,21 +95,21 @@ width:100%;
 height:75px;
 float:left;
 margin:0;
-background:url("../image/mia-dolphins.png") no-repeat;
+background:url("../images/mia-dolphins.png") no-repeat;
 background-size:100% 100%;
 }
 
 #end-zone-visitors:hover{
-background-color:rgba(0,102,0,1);	
+background-color:rgba(0,102,0,1);
 }
 
 #end-zone-visitors h1{
-text-align:center;	
+text-align:center;
 }
 
 #yards{
 width:100%;
-height:100%;	
+height:100%;
 float:left;
 }
 
@@ -125,12 +125,12 @@ float:left;
 list-style:none;
 display:block;
 border-radius:10px 10px 10px 10px;
-border-bottom:#fff 3px double;	
+border-bottom:#fff 3px double;
 background-color:rgba(109,149,56,1);
 }
 
 #yards ul li:nth-child(2){
-height:500px;	
+height:500px;
 background-color:#FFF;
 }
 
@@ -143,13 +143,13 @@ width:300px;
 height:250px;
 border-radius:10px;
 border:2px #ccc solid;
-margin:100px auto;	
+margin:100px auto;
 }
 
 #yards ul li:nth-child(2) #login #logo{
 width:300px;
 height:100px;
-background:url("../image/Pro-Activlogo.png") no-repeat;
+background:url("../images/Pro-Activlogo.png") no-repeat;
 background-size:100% 100%;
 }
 
@@ -160,7 +160,7 @@ float:left;
 color:#CCC;
 margin:10px 0 0 2.5%;
 background-color:#FFF;
-border:1px #ccc solid;		
+border:1px #ccc solid;
 }
 
 #login #passLogin{
@@ -170,7 +170,7 @@ float:left;
 color:#CCC;
 margin:10px 0 0 2.5%;
 background-color:#FFF;
-border:1px #ccc solid;		
+border:1px #ccc solid;
 }
 
 #login #loginButton{
@@ -180,7 +180,7 @@ float:left;
 background-color:#F60;
 color:#000;
 margin:10px 0 0 2.5%;
-border:1px #ccc solid;	
+border:1px #ccc solid;
 }
 
 #yards ul li:nth-child(2) #clash{
@@ -188,7 +188,7 @@ width:95%;
 height:400px;
 border-radius:10px;
 margin:50px 0 0  2.5%;
-padding:0;	
+padding:0;
 oveflow-y:scroll;
 }
 
@@ -198,7 +198,7 @@ height:450px;
 border-radius:10px;
 margin:1% 0 0  2.5%;
 border:2px #ccc solid;
-padding:0;	
+padding:0;
 }
 
 @media handheld, screen and (min-width:751px){
@@ -209,7 +209,7 @@ height:400px;
 float:left;
 border-radius:10px;
 border:2px #ccc solid;
-margin:0 0 0  0;	
+margin:0 0 0  0;
 }
 
 #clash #awayTeam{
@@ -218,7 +218,7 @@ height:400px;
 float:left;
 border-radius:10px;
 border:2px #ccc solid;
-margin:0 0 0  2.5%;	
+margin:0 0 0  2.5%;
 }
 
 }
@@ -231,7 +231,7 @@ height:400px;
 float:left;
 border-radius:10px;
 border:2px #ccc solid;
-margin:0 0 0  2.5%;	
+margin:0 0 0  2.5%;
 }
 
 #clash #awayTeam{
@@ -240,7 +240,7 @@ height:400px;
 float:left;
 border-radius:10px;
 border:2px #ccc solid;
-margin:0 0 0  2.5%;	
+margin:0 0 0  2.5%;
 }
 
 }
@@ -249,7 +249,7 @@ margin:0 0 0  2.5%;
 width:100%;
 height:200px;
 float:left;
-background:url("../image/homeTeam.jpg") no-repeat;
+background:url("../images/homeTeam.jpg") no-repeat;
 background-size:100% 100%;
 border-radius:10px 10px 0 0;
 }
@@ -258,7 +258,7 @@ border-radius:10px 10px 0 0;
 width:100%;
 height:200px;
 float:left;
-background:url("../image/awayTeam.jpg") no-repeat;
+background:url("../images/awayTeam.jpg") no-repeat;
 background-size:100% 100%;
 border-radius:10px 10px 0 0;
 }
@@ -267,13 +267,13 @@ border-radius:10px 10px 0 0;
 width:100%;
 height:200px;
 float:left;
-background:url("../image/awayTeam_BerlinThunder.jpg") no-repeat;
+background:url("../images/awayTeam_BerlinThunder.jpg") no-repeat;
 background-size:100% 100%;
 border-radius:10px 10px 0 0;
 }
 
 #featuredTeamStats{
-width:100%;	
+width:100%;
 float:left;
 }
 
@@ -286,11 +286,11 @@ padding:0;
 width:100%;
 height:30px;
 padding:20px 0 0 0;
-float:left;	
+float:left;
 background-color:#fff;
 border-bottom:1px solid #ccc;
 text-align:center;
-font-size:12px;	
+font-size:12px;
 font-family:Tahoma, Geneva, sans-serif;
 }
 
@@ -310,18 +310,18 @@ background-color:#e4e4e4;
 }
 
 #yards ul li:hover{
-background-color:rgba(129,153,57,1);	
+background-color:rgba(129,153,57,1);
 }
 
 #yard-line-number h2{
-color:#fff;	
+color:#fff;
 font-size:22px;
 width:50px;
 height:40px;
 padding:10px 0 0 0;
 float:left;
 border-radius:50%;
-text-align:center;	
+text-align:center;
 margin:1% 0 0 10%;
 }
 
@@ -329,7 +329,6 @@ margin:1% 0 0 10%;
 	width:200px;
 	height:75px;
 	float:left;
-	background:url("../image/.png") no-repeat;
+	background:url("../images/.png") no-repeat;
 	background-size:100% 100%;
 }
-
