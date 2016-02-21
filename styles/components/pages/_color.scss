@@ -1,0 +1,42 @@
+.page-colors {
+
+}
+
+.color-palette {
+  color: rgba(255,255,255,0.87);
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  width: 100%;
+
+  .color-group {
+
+    float: left;
+    margin-left: 0%;
+    width: 100%;
+    display: block;
+
+    @include breakpoint($narrow-devices) {
+      margin-left: 2%;
+      width: 32%;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+
+      &:nth-child(3n + 1) {
+        margin-left: 0px;
+        clear:both;
+      }
+    }
+
+    ul {
+      padding-left: 0px;
+    }
+
+    li.color {
+      padding: 15px;
+      list-style-type: none;
+    }
+  }
+}

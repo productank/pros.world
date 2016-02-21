@@ -1,0 +1,120 @@
+/*Alternative layouts*/
+.navigation--medium {
+
+  .md-sidenav-left.md-closed, md-sidenav.md-closed {
+
+    @include breakpoint($narrow-devices) {
+      display: block;
+      @include transition(all 0.5s ease);
+    }
+    @include transform(none);
+  }
+
+  .side-nav,
+  md-sidenav.md-locked-open,
+  md-sidenav.md-locked-open.md-closed,
+  md-sidenav.md-locked-open.md-closed.md-sidenav-left {
+    min-width: 150px;
+    width: 150px;
+
+    @include breakpoint($narrow-devices) {
+
+      height: 100%;
+      position: fixed;
+      @include transition(all 0.5s ease);
+    }
+  }
+
+  .view-container {
+    @include breakpoint($narrow-devices) {
+      margin-left: 150px;
+    }
+    width: auto;
+  }
+
+  .view-container.slided-right {
+    margin-left: 150px;
+  }
+
+  .header-toggle {
+    @include breakpoint($narrow-devices) {
+      display: none;
+    }
+  }
+
+  .nav-header {
+
+    a {
+      width: 100%;
+    }
+
+    img {
+      display: none;
+    }
+
+    .side-navigation--userpic {
+      display: block;
+      height: 100px;
+      padding: 30px 55px;
+      margin: 0;
+      width: 150px;
+      @include breakpoint($narrow-devices) {
+        @include transition(all 0.5s ease);
+      }
+    }
+
+    .side-navigation--logo {
+      margin: {
+        left: 3px;
+        right: 0px;
+      }
+      display: block;
+
+      svg {
+        height: 30px;
+        width: 30px;
+        @include breakpoint($narrow-devices) {
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+
+    .app-name {
+      display: none;
+      margin-left: 150px;
+      margin-top: -8px;
+      @include breakpoint($narrow-devices) {
+        margin-top: -6px;
+        display: block;
+      }
+    }
+  }
+
+  .main-menu--section {
+
+    .md-button {
+      text-align: center;
+      padding: 20px;
+      padding-bottom: 10px;
+
+      .menu-item__menu {
+        margin-right: auto;
+        display: block;
+      }
+
+      .menu-item__menu-name {
+        margin: auto;
+      }
+    }
+
+    .main-menu__submenu li .md-button {
+      padding: 7px;
+      text-align: center;
+    }
+
+    .md-toggle-icon {
+      display: none;
+    }
+  }
+}

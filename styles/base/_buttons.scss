@@ -1,0 +1,165 @@
+.md-button.md-icon-button.md-icon-button--small {
+  width:40px;
+  height:40px;
+  line-height: 40px;
+  margin-left:0;
+  margin-right:0;
+}
+
+.md-button.button--small {
+  line-height: 26px;
+  min-height: 26px;
+  font-size: 12px;
+  margin: {
+    left: 0;
+    right: 0;
+  }
+}
+
+
+/*
+* Material design elements
+*/
+
+$button-styles: (
+        success:$color--success,
+        info:$color--info,
+        warning:$color--warning,
+        danger:$color--danger
+);
+
+@each $button, $btn-color in $button-styles {
+
+  .md-button.md-#{$button}.md-raised,
+  .md-button.md-#{$button}.md-fab {
+    background-color: $btn-color;
+    color: #fff;
+  }
+
+  .md-button.md-#{$button}[disabled] {
+    opacity: 0.7;
+  }
+
+  .md-button.md-#{$button}.md-raised:not([disabled]):hover,
+  .md-button.md-#{$button}.md-raised:not([disabled]):focus,
+  .md-button.md-#{$button}.md-fab:not([disabled]):hover,
+  .md-button.md-#{$button}.md-fab:not([disabled]):focus {
+    background-color: $btn-color;
+  }
+
+  .btn-up.md-#{$button}:before {
+    border-bottom: 8px solid $btn-color;
+  }
+
+  .btn-up.md-#{$button}:hover:before {
+    border-bottom: 8px solid $btn-color;
+  }
+
+  .btn-down.md-#{$button}:before {
+    border-top: 8px solid $btn-color;
+  }
+
+  .btn-down.md-#{$button}:hover:before {
+    border-top: 8px solid $btn-color;
+  }
+
+  .btn-left.md-#{$button}:before {
+    border-right: 10px solid $btn-color;
+  }
+
+  .btn-left.md-#{$button}:hover:before {
+    border-right: 10px solid $btn-color;
+  }
+
+  .btn-right.md-#{$button}:before {
+    border-left: 10px solid $btn-color;
+  }
+
+  .btn-right.md-#{$button}:hover:before {
+    border-left: 10px solid $btn-color;
+  }
+
+}
+
+@each $button, $btn-color in $button-styles {
+
+  .md-button.md-#{$button} {
+    color: $btn-color;
+  }
+
+}
+
+$social-profiles: (
+        twitter: #00c7f7,
+        facebook: #335397,
+        google-plus: #dd4a38,
+        gplus: #dd4a38,
+        instagram:#82685a,
+        vimeo:#63879c,
+        flickr:#0061db,
+        github:#3b3b3b,
+        pinterest:#bc2725,
+        tumblr:#586980,
+        linkedin:#018faf,
+        dribble:#ea73a0,
+        stumbleupon:#ea4b24,
+        lastfm:#b80638,
+        evernote:#3bab27,
+        skype:#12A5F4,
+        soundcloud:#06f,
+        behance:#b80638,
+        rss:#f79638,
+        youtube:#cc181e
+);
+
+@each $profile, $bgcolor in $social-profiles {
+  .md-button.md-raised.md-#{$profile},
+  .md-button.md-raised.md-#{$profile}:focus,
+  .md-button.md-raised.md-#{$profile}:hover {
+    color: #fff;
+    background: $bgcolor;
+    border-color: $bgcolor;
+  }
+
+}
+
+/*
+* Button Sizes
+*/
+
+.btn-width-xs {
+  min-width: 60px;
+  font-size: 0.7em;
+  line-height: 26px;
+  min-height: 26px;
+}
+
+.btn-width-small {
+  min-width: 100px;
+  font-size: 0.8em;
+  line-height: 32px;
+  min-height: 32px;
+}
+
+.btn-width-medium {
+
+}
+
+.btn-width-long {
+  min-width: 150px;
+  font-size: 1em;
+  line-height: 42px;
+  min-height: 42px;
+}
+
+.btn-block {
+  width: 100%;
+  margin: {
+    left: 0;
+    right: 0;
+  }
+}
+
+.btn-no-margin {
+  margin: 0;
+}

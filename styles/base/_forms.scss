@@ -1,0 +1,12 @@
+input,
+textarea {
+  border: 1px solid $color--gray-light;
+}
+
+textarea.no-border {
+  border: none;
+
+  &:focus {
+    outline:none;
+  }
+}

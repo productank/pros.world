@@ -1,0 +1,54 @@
+$color-styles: (
+        success:$color--success,
+        info:$color--info,
+        warning:$color--warning,
+        danger:$color--danger
+);
+
+@each $color, $color-styles in $color-styles {
+
+  .bg-#{$color} {
+    background-color: $color-styles;
+    color: #fff;
+  }
+
+  .color-#{$color} {
+    color: $color-styles;
+  }
+
+}
+
+$social-profiles: (
+        twitter: #00c7f7,
+        facebook: #335397,
+        google-plus: #dd4a38,
+        gplus: #dd4a38,
+        instagram:#82685a,
+        vimeo:#63879c,
+        flickr:#0061db,
+        github:#3b3b3b,
+        pinterest:#bc2725,
+        tumblr:#586980,
+        linkedin:#018faf,
+        dribble:#ea73a0,
+        stumbleupon:#ea4b24,
+        lastfm:#b80638,
+        evernote:#3bab27,
+        skype:#12A5F4,
+        soundcloud:#06f,
+        behance:#b80638,
+        rss:#f79638,
+        youtube:#cc181e
+);
+
+@each $social, $social-color in $social-profiles {
+  .bg-#{$social} {
+    background-color: $social-color;
+    color: #fff;
+  }
+
+  .color-#{$social} {
+    color: $social-color;
+  }
+
+}

@@ -1,0 +1,46 @@
+.boxes {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+
+  .boxes__item {
+    display: table-cell;
+    width: auto;
+    text-align: center;
+  }
+
+  &.social-boxes {
+    .boxes__item {
+      line-height: 80px;
+      min-height: 70px;
+
+      a {
+        color: white;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.box-list {
+
+  ul {
+    padding: 0;
+    display: inline-table;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    li {
+      display: table-cell;
+      list-style: none;
+      border-right: 1px solid $color--gray-light;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+}

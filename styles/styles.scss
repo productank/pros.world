@@ -1,0 +1,154 @@
+/*
+* Import all styling to be exported to dist folder with grunt
+*/
+/* Contains the settings for the theme collors */
+
+@import "settings/colors";
+@import "settings/breakpoints";
+
+@import "partials/breakpoints";
+@import "partials/arrow";
+@import "partials/helpers";
+@import "partials/animations";
+
+@import "base/containers";
+@import "base/typography";
+@import "base/forms";
+@import "base/buttons";
+@import "base/icons";
+@import "base/lists";
+@import "base/media";
+@import "base/dividers";
+@import "base/colors";
+@import "base/tables";
+
+@import "components/navigation/main_menu";
+@import "components/navigation/main_menu_small";
+@import "components/navigation/main_menu_medium";
+@import "components/navigation/main_menu_medium_image";
+@import "components/navigation/dropmenu";
+@import "components/layout/page";
+@import "components/layout/top_header";
+@import "components/layout/material";
+@import "components/layout/bootstrap";
+@import "components/charts/flot";
+@import "components/charts/easypiechart";
+@import "components/charts/chartjs";
+@import "components/charts/morris";
+@import "components/pages/timeline";
+@import "components/pages/boxes_dashboard";
+@import "components/pages/page_icons";
+@import "components/pages/grid";
+@import "components/pages/profile";
+@import "components/pages/signin";
+@import "components/pages/contact";
+@import "components/pages/error";
+@import "components/pages/color";
+@import "components/chat/chat";
+@import "components/chat/chat_talk";
+@import "components/maps/maps";
+@import "components/dashboards/home_dashboards";
+@import "components/ui/chips";
+@import "components/ui/tabs";
+@import "components/messages/messages";
+@import "components/messages/tooltip";
+@import "components/boxes/small_box";
+@import "components/boxes/boxes";
+@import "components/cards/card";
+@import "components/cards/weather_card";
+@import "components/cards/user_card";
+@import "components/badges/badges";
+@import "components/tasks/tasks";
+@import "components/color/color_switcher";
+@import "components/autocomplete/site_autocomplete";
+
+/*
+/!* Customization for the browser scrollbar *!/
+@import "base/scrollbar";
+
+/!* Contains styling on tables *!/
+@import "base/tables";
+
+/!* Contains styling on forms *!/
+@import "base/forms";
+
+/!* Contains styling on tabs *!/
+@import "base/tabs";
+
+/!* Contains styling on dropdowns *!/
+@import "base/dropdowns";
+
+/!* Contains styling on labels *!/
+@import "base/labels";
+
+/!* Contains styling on alert messages *!/
+@import "base/alerts";
+
+/!* Contains styling on progress bar objects *!/
+@import "base/progress_bars";
+
+/!* Contains styling on list groups (bootstrap) *!/
+@import "base/list_groups";
+
+/!* Contains styling on panel contents *!/
+@import "base/panels";
+
+/!* Contains styling on modals *!/
+@import "base/modals";
+
+/!* Contains styling for spacers and dividers between elements *!/
+@import "base/dividers";
+
+/!* Contains styling on messages (toasts / tooltips) *!/
+@import "base/messages";
+
+/!* Contains styling on material design toolbar *!/
+@import "base/toolbar";
+
+/!* Contains styling for morris charts *!/
+@import "components/charts/morris";
+
+/!* Contains styling for top header menus (submenus in header) *!/
+@import "components/layout/top_header";
+
+/!* Contains styling for team members blocks *!/
+@import "components/team/team";
+
+/!* Contains styling for material design bottom sheet *!/
+@import "components/navigation/bottomsheet";
+
+/!* Contains styling for navbars *!/
+@import "components/navigation/navbars";
+
+/!* Contains styling for breadcrumbs *!/
+@import "components/navigation/breadcrumbs";
+
+/!* Contains styling for Main menu *!/
+@import "components/navigation/main_menu";
+
+/!* Contains styling for Profile page *!/
+@import "components/pages/profile";
+
+/!* Contains styling for 404 and error pages *!/
+@import "components/pages/error";
+
+/!* Contains styling for lock page *!/
+@import "components/pages/lock";
+
+/!* Contains styling for tasks page *!/
+@import "components/pages/tasklist";
+
+/!* Contains styling for Sign in page *!/
+@import "components/pages/signin";
+
+/!* Contains styling for Services page *!/
+@import "components/pages/services";
+
+/!* Contains styling for Contcact page *!/
+@import "components/pages/contact";
+
+/!* Contains styling for About page *!/
+@import "components/pages/about";
+
+/!* Contains styling for Invoice page *!/
+@import "components/pages/invoice";*/

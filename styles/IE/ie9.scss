@@ -1,0 +1,107 @@
+/*Material layout*/
+
+.flex {
+  display: block;
+}
+
+.layout, .layout-column, .layout-row {
+  display: inline-block;
+  clear: both;
+  width: 100%;
+}
+
+$grid-columns: 99;
+
+@for $i from 1 through $grid-columns {
+
+  .layout, .layout-column, .layout-row {
+    .flex-gt-md-#{$i},
+    .flex-#{$i}{
+      max-width: percentage($i/100);
+      width: percentage($i/100);
+      max-height: 100%;
+      box-sizing: border-box;
+      float: left;
+    }
+  }
+}
+
+
+.flex-gt-md-100,
+.flex-100{
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.md-content__menu--calendar {
+  display: none;
+}
+
+md-toolbar {
+  display: block;
+
+  span.flex {
+    display: inline;
+  }
+}
+
+.md-toolbar-tools {
+  h3 {
+    display: inline-block;
+  }
+}
+
+.md-toolbar-content {
+  display: block;
+}
+
+/*Header*/
+
+.header-autocomplete.flex-60 {
+  margin-top: 10px;
+  max-width: 50%;
+}
+
+
+md-toolbar.header-toolbar {
+  h1.app-name {
+    margin-top: 20px;
+    max-width: 15%;
+  }
+}
+
+.header-toggle.md-icon-button {
+  max-width: 5%;
+  width: 5%;
+  max-height: 100%;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 8px;
+}
+
+.header__user-picture {
+  margin-top: 10px;
+}
+
+/*Container*/
+
+.view-container {
+  display: block;
+}
+/*Dashboards*/
+
+.map-image img{
+  margin-top: 5px;
+}
+
+md-dialog {
+  display: block;
+  margin: auto;
+}
+
+.dashboard_color_switch {
+  display: none;
+}

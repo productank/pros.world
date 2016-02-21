@@ -1,0 +1,84 @@
+.chat-window {
+  .friends-list {
+    .friend-item {
+
+      .friend-name {
+        display:inline-block;
+
+        h5 {
+          font-size:12px;
+          margin-top:5px;
+          margin-bottom:5px;
+        }
+
+        h6 {
+          color:$color--gray;
+          font-size:10px;
+          margin-bottom:0px;
+          margin-top:0px;
+        }
+      }
+
+      cursor:pointer;
+      padding: {
+        left:5px;
+        right:10px;
+        top:5px;
+        bottom:5px;
+      }
+
+      &:hover {
+        background:white;
+      }
+
+      a {
+        color: $color--text;
+        outline: none;
+
+        &:active,
+        &:focus {
+          color: $color--text;
+          outline: none;
+        }
+      }
+
+      .friend-image {
+        float:left;
+        margin-right:10px;
+        margin-top:5px;
+        position:relative;
+        width: 30px;
+        height: 30px;
+        @include border-radius(100%);
+
+        img {
+          width: 30px;
+          height: 30px;
+          @include border-radius(100%);
+        }
+
+        &:before {
+          content: "";
+          width: 8px;
+          height: 8px;
+          display: block;
+          position: absolute;
+          top: -3px;
+          right: 0px;
+          border: 1px solid white;
+          z-index: 1;
+          background:$color--gray;
+          @include border-radius(100%);
+        }
+      }
+
+      &.online .friend-image:before {
+        background:$color--success;
+      }
+
+      &.offline {
+        @include opacity(0.5);
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.chat_talk_nav {
+  position:fixed;
+  background: $color--background;
+  min-height: 100%;
+  overflow: auto;
+  padding-bottom: 50px;
+  z-index: 101;
+
+  & > div {
+    position: relative;
+    min-height: 100%;
+  }
+
+  md-content {
+    background: $color--background;
+  }
+
+  md-toolbar {
+    &.chat-online {
+      border-bottom: 2px solid $color--success;
+    }
+
+    &.chat-offline {
+      @include opacity(0.7);
+      background: $color--gray-dark;
+    }
+  }
+
+  .md-toolbar-tools {
+    h5 {
+      font-weight: normal;
+    }
+  }
+}
+
+.chat_talk {
+  padding: 20px;
+
+  .chat_talk__message {
+    clear:both;
+    margin-bottom: 20px;
+    display: inline-block;
+
+    .chat__message--received-text {
+      @include border-radius(4px);
+      max-width: 80%;
+      padding: 4px 4px;
+      span {
+        color: white;
+      }
+    }
+
+    &.chat__message--received {
+      float: left;
+      .chat__message__image {
+        float: left;
+        margin-right: 10px;
+      }
+
+      .chat__message--received-text {
+        float: left;
+        background: $color--warning;
+      }
+    }
+
+    &.chat__message--sent {
+      float: right;
+      .chat__message__image {
+        float: right;
+        margin-left: 10px;
+      }
+
+      .chat__message--received-text {
+        float: right;
+        background: $color--info;
+      }
+    }
+
+  }
+}
+
+.chat__send-message {
+  background: white;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+
+  .chat__send-message__image {
+    padding: 13px 0px 10px 10px;
+  }
+
+  .chat__send-message__form {
+    padding: 10px;
+    padding-right: 0px;
+
+    .input-group {
+      display: table;
+
+      input {
+        padding: 10px 5px;
+        border-radius: 2px;
+        display: table-cell;
+        border-color: $color--gray-light;
+        width: 190px;
+      }
+
+      .input-group-button {
+        display: table-cell;
+
+        .md-button {
+          border: 1px solid $color--gray-light;
+          border-radius: 0px;
+          margin: 0;
+          padding: 0;
+          height: 39px;
+          line-height: 38px;
+          border-left: none;
+          margin-left: -1px;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,35 @@
+<md-sidenav class="side-nav md-sidenav-left md-whiteframe-z2" md-is-open="navigationController.sidebar_opened" md-component-id="left">
+  <header class="nav-header">
+    <md-toolbar class="md-accent side-navigation--userpic">
+      <div class="md-toolbar-tools">
+        <a href="#/">
+          <img src="dist/images/user.png" alt="">
+            <md-icon class="side-navigation--logo md-accent" md-svg-src="dist/img/icons/controller_48px.svg"></md-icon>
+          <h1 class="app-name">{{app_name}}</h1>
+        </a>
+      </div>
+    </md-toolbar>
+  </header>
+  <md-content flex class="" data-ng-controller="MenuCtrl as menusections">
+
+    <ul id="main-menu" class="main-menu" data-highlight-active>
+      <li data-ng-repeat="section in menusections.menu_sections" class="main-menu--section">
+        <md-button class="md-button-toggle md-button" ng-click="section.url != null ? menusections.goToUrl(section.url) : menusections.toggle($index)" aria-controls="menus">
+          <div class="ng-binding ng-scope">
+            <md-icon md-svg-src="{{section.icon}}" ng-class="{'md-primary':menusections.getActiveParent(section.menu_items),'md-accent':!menusections.getActiveParent(section.menu_items)}" class="menu-item__menu"></md-icon>
+            <span class="menu-item__menu-name">{{section.name}}</span>
+          <span aria-hidden="true" class="md-toggle-icon" ng-if="section.menu_items" ng-class="{'toggled' : section.toggled}" style="">
+            <md-icon md-svg-src="dist/img/icons/ic_keyboard_arrow_down_24px.svg"></md-icon>
+          </span>
+          </div>
+        </md-button>
+        <ul ng-if="section.menu_items" class="main-menu__submenu" ng-class="section.toggled ? 'open' : 'closed'">
+          <li data-ng-repeat="item in section.menu_items">
+            <md-button ng-href="#/{{item.url}}" ng-class="menusections.getClass('{{item.url}}')" aria-label="Button" class="btn-width-medium md-accent">{{item.name}}</md-button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </md-content>
+</md-sidenav>

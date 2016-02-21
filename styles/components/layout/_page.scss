@@ -1,0 +1,40 @@
+.view-container {
+  @include transition(all 200ms ease-in-out);
+
+  &.slided-right {
+    margin-left: 250px;
+    width: 100%;
+    min-width: 420px;
+
+    @include breakpoint($narrow-devices) {
+      margin-left: 250px;
+      width: auto;
+    }
+  }
+
+  &.ownpage{
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+.main-content {
+  padding: 0px;
+  background: $color--background;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.page-padding {
+  padding: 20px;
+
+  .slided-right & {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,36 @@
+img {
+  border: none;
+}
+
+.img-responsive {
+  width: 100% \9;
+}
+
+.img-rounded {
+  @include border-radius(100%);
+}
+
+.square-icon {
+  display: block;
+  text-align: center;
+}
+
+img.img30_30 {
+  width: 30px;
+  height: 30px;
+}
+
+img.img40_40 {
+  width: 30px;
+  height: 30px;
+}
+
+img.img64_64 {
+  width: 64px;
+  height: 64px;
+}
+
+img.img80_80 {
+  width: 80px;
+  height: 80px;
+}

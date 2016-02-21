@@ -1,0 +1,38 @@
+.colors_selecters {
+  max-width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .color_element {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:0 7px 8px -4px rgba(0,0,0,.2),0 13px 19px 2px rgba(0,0,0,.14),0 5px 24px 4px rgba(0,0,0,.12);
+    cursor: pointer;
+  }
+
+  .primary {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    float: left;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -20px;
+    top: -20px;
+  }
+
+  .accent {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    float: left;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 10px;
+    top: 8px;
+  }
+}

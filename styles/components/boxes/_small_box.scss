@@ -1,0 +1,57 @@
+.small-box-icon {
+  min-height: 90px;
+  padding: 20px;
+  text-align: center;
+
+  &.no-padding {
+    padding: 0px;
+  }
+
+  .pull-left {
+    max-width: 40%;
+  }
+
+  .pull-right {
+    max-width: 60%;
+  }
+
+  .small-box-chart {
+    height: 115px;
+    line-height: 115px;
+    padding-top: 30px;
+  }
+
+  canvas {
+    vertical-align: inherit !important;
+  }
+
+  .box-icon {
+    display: block;
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .small-box-icon__icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .box-icon.rounded {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+  }
+
+  .box-info p {
+    margin: 0;
+  }
+}

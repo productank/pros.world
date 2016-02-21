@@ -1,0 +1,23 @@
+.site-autocomplete__image {
+  width: 30px;
+  border-radius: 4px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.site-autocomplete__icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.site-autocomplete__link {
+  width: 100%;
+  color: $color--text;
+  text-decoration: none;
+  display: block;
+}
+
+.md-virtual-repeat-container .md-virtual-repeat-offsetter {
+  width: 100%;
+}

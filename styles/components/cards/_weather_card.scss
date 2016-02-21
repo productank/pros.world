@@ -1,0 +1,53 @@
+md-card.card-weather {
+
+  .md-card-header {
+    position:relative;
+    .weather-icon {
+      position:absolute;
+      top: 40%;
+      width: 100%;
+      display: block;
+      text-align:center;
+
+      .weather-icon {
+        font-size: 50px;
+        color: white;
+
+        @include breakpoint($narrow-devices){
+          font-size: 80px;
+        }
+      }
+    }
+  }
+
+  .weather-speed-dial  {
+    md-fab-speed-dial {
+      rigth: 90px;
+    }
+  }
+
+  .md-card-weather__list {
+
+    ul {
+      padding: 0;
+      display: inline-table;
+      width: 100%;
+      table-layout: fixed;
+
+      li {
+        display: table-cell;
+        list-style: none;
+        border-right: 1px solid $color--gray-light;
+
+        &:last-child {
+          border: none;
+        }
+
+        .weather-icon {
+          font-size: 30px;
+        }
+      }
+    }
+
+  }
+}

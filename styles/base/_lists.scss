@@ -1,0 +1,42 @@
+
+.list-inline {
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+}
+
+.list-group {
+
+  margin: 0px;
+
+  .list-group-item {
+    border: 1px solid #eff2f7;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+  }
+
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .list-group-item>.badge {
+    float: right;
+  }
+
+}

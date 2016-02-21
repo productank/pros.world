@@ -1,0 +1,20 @@
+.top-header {
+  md-toolbar {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+
+    .mfb-component {
+      margin-top: -5px;
+    }
+  }
+}
+
+.header__user-picture {
+  width: 32px;
+  height: 32px;
+  @include border-radius(100%);
+  @include box-shadow(0 1px 0 rgba(0,0,0,.15));
+}
+
+.app-name {
+  color: white;
+}

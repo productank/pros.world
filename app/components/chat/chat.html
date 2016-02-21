@@ -1,0 +1,87 @@
+<md-toolbar class="md-accent" layout="row">
+  <div class="md-toolbar-tools {{chatwindow.friend.status ? 'chat-online' : 'chat-offline'}}">
+    <div>
+      <img ng-src="{{chatwindow.friend.image}}" class="img30_30 img-rounded" alt="">
+    </div>
+    &nbsp;
+    <div>
+      <h5>{{chatwindow.friend.name}}</h5>
+    </div>
+    <span flex></span>
+    <md-button class="md-icon-button" aria-label="Close" ng-click="chatwindow.close()">
+      <md-icon md-svg-icon="dist/img/icons/ic_close_24px.svg"></md-icon>
+    </md-button>
+  </div>
+</md-toolbar>
+<md-content>
+
+  <section class="md-content-section">
+    <md-content>
+      <div class="chat_talk">
+        <div class="chat_talk__message chat__message--received">
+          <img ng-src="{{chatwindow.friend.image}}" class="chat__message__image img40_40 img-rounded" alt="">
+          <div class="chat__message--received-text">
+            <span>
+              Hello mate.. We are doing a project on the smiths. We might need some sketches next week or so
+            </span>
+          </div>
+        </div>
+
+        <div class="chat_talk__message chat__message--sent">
+          <img ng-src="dist/images/user.png" class="chat__message__image img40_40 img-rounded" alt="">
+          <div class="chat__message--received-text">
+            <span>
+              Nice that sounds great.
+            </span>
+          </div>
+        </div>
+
+        <div class="chat_talk__message chat__message--sent">
+          <img ng-src="dist/images/user.png" class="chat__message__image img40_40 img-rounded" alt="">
+          <div class="chat__message--received-text">
+            <span>
+              I might just have to coordinate with Patrick, but it sounds fine on my part.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="chat_talk__message chat__message--received">
+          <img ng-src="{{chatwindow.friend.image}}" class="chat__message__image img40_40 img-rounded" alt="">
+          <div class="chat__message--received-text">
+            <span>
+              Great. I will brief you in the office about what the client needs.
+            </span>
+          </div>
+        </div>
+
+        <div class="chat_talk__message chat__message--received">
+          <img ng-src="{{chatwindow.friend.image}}" class="chat__message__image img40_40 img-rounded" alt="">
+          <div class="chat__message--received-text">
+            <span>
+              See you monday!
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </md-content>
+
+  </section>
+
+</md-content>
+<div layout="row" class="chat__send-message">
+  <div class="chat__send-message__image">
+    <img ng-src="dist/images/user.png" class="chat__message__image img40_40 img-rounded" alt="">
+  </div>
+  <form class="chat__send-message__form">
+    <div class="input-group">
+      <input type="text" class="form-control chat__send-message--input" name="input" ng-model="chatwindow.send_text.value" placeholder="Send your message">
+      <span class="input-group-button">
+        <md-button aria-label="Send message" class="md-icon-button" ng-click="chatwindow.appendMessage()">
+          <md-icon md-svg-icon="dist/img/icons/ic_send_24px.svg"></md-icon>
+        </md-button>
+      </span>
+    </div>
+  </form>
+</div>

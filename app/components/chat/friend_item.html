@@ -1,0 +1,13 @@
+<div class="friend-item {{friend_it.chat_friend_online ? 'online' : 'offline'}}">
+  <a md-ink-ripple="#bbb" ng-click="chatwindow.toggleRightNavbar(friend_it.chat_friend_image,friend_it.chat_friend_name, friend_it.chat_friend_online)" href="javascript:;">
+    <div class="friend-image">
+      <img ng-src="{{friend_it.chat_friend_image}}" alt="">
+    </div>
+    <div class="friend-name">
+      <h5>{{friend_it.chat_friend_name}}</h5>
+      <h6>
+        {{friend_it.chat_friend_location}}
+      </h6>
+    </div>
+  </a>
+</div>

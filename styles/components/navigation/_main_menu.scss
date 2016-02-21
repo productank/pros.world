@@ -1,0 +1,157 @@
+/*
+* Navigation style - normal
+*/
+
+.side-nav,
+md-sidenav.md-locked-open,
+md-sidenav.md-locked-open.md-closed,
+md-sidenav.md-locked-open.md-closed.md-sidenav-left {
+  min-width: 250px;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  overflow-x: hidden;
+}
+
+.side-navigation--userpic {
+  height: 158px;
+
+  .md-toolbar-tools {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.side-navigation--logo {
+  display: none;
+}
+
+.nav-header {
+  text-align: center;
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 0%;
+  }
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .app-name {
+    display: none;
+  }
+}
+
+.main-menu {
+  padding-left: 0px;
+  margin-top: 0px;
+  .main-menu--section {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+
+    .md-button {
+      width: 100%;
+      margin: 0;
+      font-size: 12px;
+      padding: {
+        left: 20px;
+        right: 0px;
+        top: 10px;
+        bottom: 10px;
+      }
+      text-align: left;
+
+      .menu-item__menu {
+        margin-right: 20px;
+      }
+    }
+
+    .md-button-toggle .md-toggle-icon {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+    }
+  }
+
+  .main-menu__submenu {
+    display: none;
+    padding: 0;
+    background: $color--background;
+
+    li {
+      .md-button {
+        font-size: 12px;
+        padding: {
+          top: 7px;
+          bottom: 7px;
+          right: 0;
+          left: 45px;
+        }
+        text-align: left;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .main-menu__submenu.open {
+    display: block !important;
+    @include transition(all 0.2s ease-in-out);
+  }
+}
+
+/**
+ * This is the basic styles for all the icons inside the main button
+ */
+
+.mfb-component__icon{
+  position: absolute;
+  top:12px;
+  left:0;
+  width: 100%;
+}
+
+.mfb-component .toggled {
+  .mfb-component__icon {
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+md-backdrop.md-sidenav-backdrop {
+  display: none;
+}
+
+.mfb-component__main-icon--active,
+.mfb-component__main-icon--resting {
+  @extend .mfb-component__icon;
+  -webkit-transform: scale(1) rotate(360deg);
+  transform: scale(1) rotate(360deg);
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(.4,0,1,1);
+  transition: transform 300ms cubic-bezier(.4,0,1,1);
+}
+
+.mfb-component__main-icon--active{
+  opacity: 0;
+}
+
+.mfb-component.md-button {
+  position: relative;
+}
+
+.mfb-component .toggled {
+  .mfb-component__main-icon{
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+  }
+  .mfb-component__main-icon--resting{
+    opacity: 0;
+  }
+  .mfb-component__main-icon--active{
+    opacity: 1;
+  }
+}

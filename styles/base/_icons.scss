@@ -1,0 +1,19 @@
+/*
+* Material design elements
+*/
+
+$icon-styles: (
+        white: 'white',
+        success:$color--success,
+        info:$color--info,
+        warning:$color--warning,
+        danger:$color--danger
+);
+
+@each $icon, $icon-color in $icon-styles {
+
+  md-icon.md-#{$icon} {
+    color: $icon-color;
+  }
+
+}

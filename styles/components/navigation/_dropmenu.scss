@@ -1,0 +1,11 @@
+.md-content__menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.md-content__menu--calendar {
+  @extend .md-content__menu;
+  right: 30px;
+  top: 15px;
+}

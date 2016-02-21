@@ -1,0 +1,52 @@
+md-card.md-user-card {
+
+  .md-card-header {
+    position:relative;
+    max-height: 250px;
+
+    &:before {
+      content : "";
+      background-color: rgba(0,0,0,0.4);
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .card-user-name {
+      color: white;
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+    }
+  }
+
+  .user-speed-dial  {
+    md-fab-speed-dial {
+      right: 90px;
+      margin-top: -90px;
+    }
+  }
+
+  .md-card-buttons__list {
+
+    ul {
+      padding: 0;
+      display: inline-table;
+      width: 100%;
+      table-layout: fixed;
+
+      li {
+        display: table-cell;
+        list-style: none;
+        border-right: 1px solid $color--gray-light;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+
+  }
+}

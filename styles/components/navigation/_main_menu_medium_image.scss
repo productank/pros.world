@@ -1,0 +1,27 @@
+/*Alternative layouts*/
+.navigation--medium--image {
+  @extend .navigation--medium;
+
+  .nav-header {
+
+    .side-navigation--logo {
+      display: none;
+    }
+
+    .side-navigation--userpic {
+      padding: 20px 45px;
+    }
+
+    a {
+      width: 60px;
+
+      img {
+        display: block;
+        width: 60px;
+        height: 60px;
+        @include border-radius(100%);
+        @include box-shadow(0 0 3px 1px rgba(0,0,0,.2));
+      }
+    }
+  }
+}

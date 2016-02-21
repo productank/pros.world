@@ -1,0 +1,50 @@
+.md-content__body {
+  background: white;
+  padding: 15px;
+  position: relative;
+
+  &.extra-padding {
+    padding: 40px;
+  }
+}
+
+md-toolbar.md-primary ,
+md-toolbar.md-accent {
+  color: white;
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  * {
+    color: white;
+  }
+}
+
+.main-content {
+  md-toolbar {
+    min-height: 54px;
+    .md-toolbar-tools {
+      height: 54px;
+    }
+  }
+}
+
+.md-toolbar-content {
+  padding: 20px;
+  font-size: 1em;
+}
+
+.md-content__footer {
+  padding: 20px;
+  border-top: 1px solid $color--gray-light;
+}

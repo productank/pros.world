@@ -1,0 +1,121 @@
+<section class="row" ng-controller="Home">
+  <div class="md-whiteframe-z1 text-center" style="padding:33px" ng-hide="showTeam1==1 || showTeam2==1">
+  	
+  	<p class="text-center">
+  		<img src="" class="img-responsive, center-block">
+  	</p>
+  	<p class="text-center">
+      <md-button aria-label="select team" class="btn-width-medium md-raised md-primary" ng-click="showTeam1=1">
+        <md-icon md-svg-src="dist/img/icons/ic_grade_24px.svg">
+        </md-icon> Amsterdam Admirals
+      </md-button>
+
+  	</p>
+  	<p class="text-center">
+      <md-button aria-label="select team" class="btn-width-medium md-raised md-accent" ng-click="showTeam2=1">
+        <md-icon md-svg-src="dist/img/icons/ic_grade_24px.svg">
+        </md-icon> Barcelona Dragons
+      </md-button>
+
+  	</p>
+  </div>
+
+  <div class="md-whiteframe-z1 text-center" style="padding:33px" ng-show="showTeam1==1">
+  	<h2 class="text-center" style="color:#000">Amsterdam Admirals</h2>
+
+        <div class="col-md-6 col-md-offset-3">
+            <div class="md-whiteframe-z1">
+              <md-toolbar class="md-primary md-theme-default md-whiteframe-z1">
+                <div class="md-toolbar-tools">
+                  <h3>Choose Players</h3>
+                  <span class="flex"></span>
+
+                </div>
+              </md-toolbar>
+              <md-content>
+                <div class="md-content__body">
+                  <div class="row">
+                    <div class="table-responsive">
+                      
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Position</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="data in amsterdamPlayers">
+                        <td class="text-center"><a href ng-click="showStats(data.nflId)">{{data.jerseyNumber}} {{data.displayName}}</a></td>
+                          <td class="text-center"><a href ng-click="showStats(data.nflId)">{{data.position}}</a></td>
+                        </tr>
+                        </tbody>
+                      </table>
+
+                  </div>
+                </div>
+                </div>
+              </md-content>
+
+            </div>
+              	<p class="text-center">
+			      <md-button aria-label="select team" class="btn-width-medium md-raised md-default" ng-click="showTeam1=0">
+			        <md-icon md-svg-src="dist/img/icons/ic_keyboard_backspace_24px.svg">
+			        </md-icon> Back
+			      </md-button>
+
+				</p>
+        </div>
+
+  </div>
+
+  <div class="md-whiteframe-z1 text-center" style="padding:33px" ng-show="showTeam2==1">
+  	<h2 class="text-center" style="color:#000">Barcelona Dragons</h2>
+
+        <div class="col-md-6 col-md-offset-3">
+            <div class="md-whiteframe-z1">
+              <md-toolbar class="md-primary md-theme-default md-whiteframe-z1">
+                <div class="md-toolbar-tools">
+                  <h3>Choose Players</h3>
+                  <span class="flex"></span>
+
+                </div>
+              </md-toolbar>
+              <md-content>
+                <div class="md-content__body">
+                  <div class="row">
+                    <div class="table-responsive">
+                      
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Position</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="data in dragonsPlayers">
+                        <td class="text-center"><a href ng-click="showStats(data.nflId)">{{data.jerseyNumber}} {{data.displayName}}</a></td>
+                          <td class="text-center"><a href ng-click="showStats(data.nflId)">{{data.position}}</a></td>
+                        </tr>
+                        </tbody>
+                      </table>
+
+                  </div>
+                </div>
+                </div>
+              </md-content>
+
+            </div>
+              	<p class="text-center">
+			      <md-button aria-label="select team" class="btn-width-medium md-raised md-default" ng-click="showTeam2=0">
+			        <md-icon md-svg-src="dist/img/icons/ic_keyboard_backspace_24px.svg">
+			        </md-icon> Back
+			      </md-button>
+
+				</p>
+        </div>
+  </div>
+
+
+</section>

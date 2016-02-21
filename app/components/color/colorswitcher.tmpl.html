@@ -1,0 +1,40 @@
+<md-dialog aria-label="Mango (Fruit)" data-ng-controller="ColorSwitchCtrl as colorswitcher">
+  <md-toolbar class="md-accent md-theme-default md-whiteframe-z1">
+    <div class="md-toolbar-tools">
+      <h3>Color switcher</h3>
+      <span flex></span>
+      <md-button class="md-icon-button" ng-click="cancel()">
+        <md-icon md-svg-src="dist/img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+  <md-dialog-content>
+    <div class="md-content__body extra-padding">
+
+      <form>
+        <div>
+          <h4>
+            Choose a theme
+          </h4>
+          <div class="colors_selecters">
+            <div class="color_element" ng-repeat="theme in colorswitcher.themes" ng-click="choose_theme(theme.name)">
+              <md-tooltip>
+                {{theme.name}}
+              </md-tooltip>
+              <div class="primary" ng-style="{'backgroundColor': getColorHex(theme.md_primary.base,theme.md_primary.shade)}">
+              </div>
+              <div class="accent" ng-style="{'backgroundColor': getColorHex(theme.md_accent.base,theme.md_accent.shade)}">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <md-button ng-click="cancel()" class="btn-block md-primary md-raised">Okay</md-button>
+          <md-button ng-click="reset()" class="btn-block md-accent md-raised">Reset to default</md-button>
+        </div>
+      </form>
+
+    </div>
+  </md-dialog-content>
+</md-dialog>

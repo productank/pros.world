@@ -1,0 +1,19 @@
+.divider {
+  display: block;
+  height: 20px;
+  clear:both;
+  width: 100%;
+
+  .slided-right & {
+    height: 15px;
+  }
+
+  &.divider-bg {
+    background: $color--background;
+  }
+}
+
+.space {
+  display: block;
+  height: 10px;
+}

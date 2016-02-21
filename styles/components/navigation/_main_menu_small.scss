@@ -1,0 +1,149 @@
+/*Alternative layouts*/
+.navigation--small {
+
+  .md-sidenav-left.md-closed, md-sidenav.md-closed {
+
+    @include breakpoint($narrow-devices) {
+      display: block;
+      @include transition(all 0.5s ease);
+    }
+    @include transform(none);
+  }
+
+  .side-nav,
+  md-sidenav.md-locked-open,
+  md-sidenav.md-locked-open.md-closed,
+  md-sidenav.md-locked-open.md-closed.md-sidenav-left {
+
+    @include breakpoint($narrow-devices) {
+
+      min-width: 80px;
+      width: 80px;
+      height: 100%;
+      position: fixed;
+      @include transition(all 0.5s ease);
+      overflow: hidden;
+
+      .main-menu__submenu.open {
+        display: none !important;
+      }
+
+      &:hover {
+        overflow-y: auto;
+        min-width: 250px;
+        width: 250px;
+
+        & ~ .view-container {
+          margin-left: 250px;
+          width: auto;
+        }
+
+        .main-menu__submenu.open {
+          display: block !important;
+        }
+
+        .side-navigation--userpic {
+          width: 250px;
+          text-align: left;
+        }
+
+        .main-menu--section {
+
+          .md-button .menu-item__menu {
+            width: 20px;
+          }
+
+          .md-toggle-icon {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .view-container {
+    @include breakpoint($narrow-devices) {
+      margin-left: 80px;
+    }
+    width: auto;
+  }
+
+  .header-toggle {
+    @include breakpoint($narrow-devices) {
+      display: none;
+    }
+  }
+
+  .nav-header {
+
+    a {
+      width: 100%;
+      @include breakpoint($narrow-devices) {
+        width: auto;
+      }
+    }
+
+    img {
+      display: none;
+    }
+
+    .side-navigation--userpic {
+      display: block;
+      height: 56px;
+      padding: 14px 15px;
+      margin: 0;
+      width: 250px;
+      @include breakpoint($narrow-devices) {
+        width: 80px;
+        @include transition(all 0.5s ease);
+      }
+    }
+
+    .side-navigation--logo {
+      margin: {
+        left: auto;
+        right: auto;
+      }
+      @include breakpoint($narrow-devices) {
+        margin: {
+          left: 7px;
+          right: 7px;
+        }
+      }
+      display: block;
+
+      svg {
+        height: 30px;
+        width: 30px;
+        @include breakpoint($narrow-devices){
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+
+    .app-name {
+      display: none;
+      margin-left: 80px;
+      margin-top: -8px;
+      @include breakpoint($narrow-devices){
+        margin-top: -6px;
+        display: block;
+        line-height: 0px;
+      }
+    }
+  }
+
+  .main-menu--section {
+
+    .md-button .menu-item__menu {
+      width: 40px;
+    }
+
+    .md-toggle-icon {
+      @include breakpoint($narrow-devices){
+        display: none;
+      }
+    }
+  }
+}

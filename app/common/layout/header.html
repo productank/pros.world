@@ -1,0 +1,20 @@
+<md-toolbar class="header-toolbar" layout="row">
+  <div class="md-toolbar-tools">
+    <md-button class="header-toggle mfb-component md-icon-button" aria-label="Settings" ng-click="navigationController.toggleLeft()">
+      <span class="md-toggle-icon header__menu-button" style="">
+        <md-icon class="mfb-component__main-icon--resting" md-svg-icon="dist/img/icons/ic_menu_24px.svg"></md-icon>
+        <md-icon class="mfb-component__main-icon--active" md-svg-icon="dist/img/icons/ic_arrow_back_24px.svg"></md-icon>
+      </span>
+    </md-button>
+    <h1 flex="60" flex-gt-md="15" class="app-name">{{app_name}}</h1>
+    <div class="header-autocomplete" flex="60" hide-sm hide-md hide-xs data-ng-controller="siteAutocompleteCtrl as autocompletectrl">
+     &nbsp;
+    </div>
+    <span flex="5"></span>
+
+
+    <div flex="5" ng-show="session==1" hide-sm hide-xs>
+    <md-icon class="md-accent" md-svg-src="dist/img/icons/ic_exit_to_app_24px.svg" ng-click="logout()"></md-icon>
+    </div>
+  </div>
+</md-toolbar>

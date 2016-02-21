@@ -1,0 +1,129 @@
+/************************************
+2 - Typography
+*************************************/
+
+body {
+  color: $color--text;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4{
+  font-weight: normal;
+  color: $color--gray-dark;
+}
+
+h1,
+.h1 {
+  font-size: 2em;
+}
+
+h2, .h2 {
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+
+h3,.h3 {
+  font-size: 18px;
+  margin: {
+    top: 10px;
+    bottom: 10px;
+  }
+}
+
+h4,.h4 {
+  font-size: 16px;
+  margin: {
+    top: 5px;
+    bottom: 5px;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 17px;
+  line-height: 20px;
+  margin: {
+    top: 5px;
+    bottom: 5px;
+  }
+}
+
+.md-title {
+  font-weight: normal;
+}
+
+p {
+  color: $color--text;
+  margin: {
+    top: 10px;
+    bottom: 10px;
+  }
+}
+
+.text--small {
+  font-size: 14px;
+}
+
+.text--muted {
+  color: $color--gray;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.dropcap, .dropcap-square, .dropcap-circle {
+  display: block;
+  float: left;
+  font-weight: normal;
+  line-height: 36px;
+  margin-right: 6px;
+  text-shadow: none;
+}
+
+.dropcap {
+  font-size: 3.1em;
+}
+
+.dropcap-square, .dropcap-circle {
+  background-color: #444;
+  color: #fff;
+  width: 36px;
+  text-align: center;
+}
+
+.dropcap-square {
+  @include border-radius(0px);
+  font-size: 2.3em;
+}
+
+.dropcap-circle {
+  @include border-radius(50%);
+  font-size: 1.78em;
+}
+
+blockquote {
+  padding-left: 40px;
+  border-left: 5px solid $color--gray-dark;
+  font-style: italic;
+}
+
+.blockquote-reverse, blockquote.pull-right {
+  border-left: none;
+  padding-right: 40px;
+  text-align: right;
+  border-right: 5px solid $color--gray-dark;
+}

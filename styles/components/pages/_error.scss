@@ -1,0 +1,60 @@
+.page-err-header {
+
+  border-bottom: 4px solid $color--gray-light;
+  background: url(../images/background/bg_weather1.png) center/cover;
+  position: relative;
+  padding: {
+    bottom: 100px;
+    top: 100px;
+  }
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-bottom: 100px;
+
+  &:before{
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,.2);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+
+  .logo {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    a {
+      width: 100px;
+      height: 100px;
+      display: block;
+      border: 4px solid $color--gray-light;
+      border-radius: 100%;
+      background: white;
+      line-height: 90px;
+      margin: auto;
+
+      .md-button.md-icon-button.md-icon-button--small {
+        height: 50px;
+        width: 50px;
+      }
+
+      md-icon {
+        height: 34px;
+        width: 34px;
+      }
+    }
+  }
+}
+
+.err-status {
+  h1 {
+    font-size: 8em;
+  }
+}

@@ -1,0 +1,41 @@
+.layout-margin > .flex-gt-md ,
+.layout-margin > .flex-lg,
+.layout-margin > .flex,
+.row-container > .flex {
+  margin: 10px;
+
+  .slided-right & {
+    margin: 5px;
+  }
+}
+.layout-padding {
+  padding: 0;
+}
+
+.layout-padding>* {
+  padding: 0px;
+}
+
+.layout-column {
+
+  .main-content &:first-child {
+    margin-bottom: 0px;
+  }
+
+  .main-content &:nth-child(n + 2) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+$grid-columns: 99;
+
+@for $i from 1 through $grid-columns {
+
+  @-moz-document url-prefix() {
+    .layout-column > .flex-gt-md-#{$i},
+    .layout-gt-md-column > .flex-gt-md-#{$i} {
+      max-width: percentage($i/100);
+    }
+  }
+}
